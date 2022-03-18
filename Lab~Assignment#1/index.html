@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main" style="width: 100%;height: 300px;border: 1px solid black;">
+    <center>
+      <h1 style="background-color: blue;color:white;">TODO LIST</h1>
+    </center>
+    <br><br>
+    <div class="flow-right controls">
+      <span style="background-color: black;display: inline; color: white; padding: 10px;">Item count: <span
+          id="item-count">0</span></span>
+      <span style="background-color: black;display: inline; color: white; padding: 10px;">Unchecked count: <span
+          id="unchecked-count">0</span></span>
+    </div>
+    <br><br>
+    <div class="form" style="padding-left: 500px;">
+      <input type="text" id="box" placeholder="Enter Item Name"
+        style="width: 200px; height: 40px; margin: auto; margin-bottom: 10px; background-color: azure;" />
+      <button class="button center" onClick="newTodo()" style="width: 150px; margin: 5px;">New TODO</button>
+      <button class="button center" onClick="removeTodo()" style="width: 150px;">Remove TODO</button>
+      <ul id="todo-list" class="todo-list" style="text-align: center;font-size: 20px;">
+      </ul>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
